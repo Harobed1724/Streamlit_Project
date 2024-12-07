@@ -88,53 +88,6 @@ This platform is designed to predict customer churn in the telecommunications in
 
 ---
 
-## Getting Started
-
-### Installation
-1. Clone the repository
-
-2. Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Configure environment variables:
-    ```bash
-    cp .env.example .env
-    ```
-
-### Running the Application
-1. Start the application:
-    ```bash
-    python app.py
-    ```
-2. Access the web interface at `http://localhost:5000` (default port).
-
-### Data Preparation
-- Customer demographics (CSV format)
-- Service usage metrics (CSV format)
-- Billing information (CSV format)
-- Customer interaction history (CSV format)
-
-### Model Training
-- To train the model, use:
-    ```bash
-    python train.py --model=xgboost
-    ```
-- To evaluate the model’s performance, use:
-    ```bash
-    python evaluate.py --model=xgboost
-    ```
-
-### Making Predictions
-- Run the prediction command:
-    ```bash
-    python predict.py --model=xgboost
-    ```
-- View results at `http://localhost:5000/predictions`.
-
----
-
----
 
 ## License
 This project is licensed under the MIT License.
